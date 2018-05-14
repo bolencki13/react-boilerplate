@@ -11,7 +11,8 @@
   ],
   "globals": {
     "fetch": true,
-    "FormData": true
+    "FormData": true,
+    "FileReader": true
   },
   "parserOptions": {
     "ecmaVersion": 8,
