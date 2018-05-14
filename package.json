@@ -4,7 +4,7 @@
   "description": "A ReactJS boilerplate template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_PATH=src jest"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "url": "https://github.com/bolencki13/react-boilerplate/issues"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./tests/enzyme.setup.js"
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
   },
   "homepage": "https://github.com/bolencki13/react-boilerplate#readme",
   "dependencies": {
