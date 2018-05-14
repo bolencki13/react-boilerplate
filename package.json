@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/bolencki13/react-boilerplate/issues"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./tests/enzyme.setup.js"
+  },
   "homepage": "https://github.com/bolencki13/react-boilerplate#readme",
   "dependencies": {
     "react": "^16.3.2",
@@ -31,6 +34,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.2"
   }
 }
