@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/bolencki13/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/bolencki13/react-boilerplate#readme"
+  "homepage": "https://github.com/bolencki13/react-boilerplate#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
 }
