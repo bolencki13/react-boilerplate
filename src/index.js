@@ -6,5 +6,5 @@ import 'stylesheets/index.scss'
 
 ReactDOM.render(
   <HomePage/>,
-  document.getElementById('app')
+  document.getElementById('root')
 )
