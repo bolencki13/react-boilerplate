@@ -1,0 +1,26 @@
+{
+  "name": "react-boiler-plate",
+  "version": "1.0.0",
+  "description": "A ReactJS boilerplate template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolencki13/react-boilerplate.git"
+  },
+  "keywords": [
+    "reactjs",
+    "boilerplate",
+    "webpack",
+    "react",
+    "web"
+  ],
+  "author": "Brian Olencki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bolencki13/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bolencki13/react-boilerplate#readme"
+}
