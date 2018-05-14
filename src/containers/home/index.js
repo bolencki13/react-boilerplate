@@ -13,6 +13,11 @@ class HomePage extends Component {
 
   onInputChange (newValue) {
     return this.props.dispatch(HelloWorldActions.updateValue(newValue))
+      .then(() => {
+        if (this.props.error) {
+          console.error(this.props.error)
+        }
+      })
   }
 
   render () {
@@ -28,7 +33,8 @@ class HomePage extends Component {
 
 HomePage.propTypes = {
   dispatch: PropTypes.func,
-  value: PropTypes.string
+  value: PropTypes.string,
+  error: PropTypes.object
 }
 
 export default connect((store) => {
