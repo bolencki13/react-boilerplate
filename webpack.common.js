@@ -16,10 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.js$/,
         exclude: ['node_modules'],
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         options: {
           fix: true
         }
@@ -28,7 +28,7 @@ module.exports = {
         test: /\.js$/,
         exclude: ['node_modules'],
         loader: [
-          'babel-loader',
+          'babel-loader'
         ]
       },
       {

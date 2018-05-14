@@ -5,7 +5,11 @@ import App from './'
 
 describe('components/app', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(<App/>)
+    const wrapper = shallow(
+      <MockStore>
+        <App/>
+      </MockStore>
+    )
 
     expect(wrapper).toMatchSnapshot()
   })
