@@ -37,9 +37,12 @@
   },
   "homepage": "https://github.com/bolencki13/react-boilerplate#readme",
   "dependencies": {
+    "history": "^4.7.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8",
     "redux": "^4.0.0",
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.2.0"

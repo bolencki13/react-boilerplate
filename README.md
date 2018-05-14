@@ -13,7 +13,8 @@ A basic boilerplate template for a ReactJS Project. This template includes suppo
 * [ESLint](https://eslint.org/)
 * [SASS/SCSS](https://sass-lang.com/)
 * File loading
-* Routing
+* [Routing](https://github.com/ReactTraining/react-router)
+* [Redux](https://github.com/reduxjs/redux)
 * [Jest](https://facebook.github.io/jest/docs/en/tutorial-react.html)/[Enzyme](https://github.com/airbnb/enzyme) (continuous) testing
 * Git hooks with [Husky](https://github.com/typicode/husky)
 

@@ -12,7 +12,8 @@
   "globals": {
     "fetch": true,
     "FormData": true,
-    "FileReader": true
+    "FileReader": true,
+    "MockStore": true
   },
   "parserOptions": {
     "ecmaVersion": 8,

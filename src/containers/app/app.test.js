@@ -3,13 +3,9 @@ import { shallow } from 'enzyme'
 
 import App from './'
 
-describe('components/app', () => {
+describe('containers/home', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(
-      <MockStore>
-        <App/>
-      </MockStore>
-    )
+    const wrapper = shallow(<App/>)
 
     expect(wrapper).toMatchSnapshot()
   })
