@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "jest": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "fetch": true,
+    "FormData": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
