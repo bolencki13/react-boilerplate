@@ -5,6 +5,17 @@
 
 A basic boilerplate template for a ReactJS Project. This template includes support for sass, jsx, html, and arbitrary files. There is also a basic folder structure for organization and readability. The template supports minified versions for a production build
 
+## Features
+
+* Webpack dev server
+* Minified production build
+* Readabe folder structure
+* ESLint
+* SASS/SCSS
+* File loading
+* Jest/Enzyme testing
+* Git hooks with [Husky](https://github.com/typicode/husky)
+
 ## Installation
 
 ```sh
