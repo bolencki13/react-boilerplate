@@ -21,7 +21,7 @@ A basic boilerplate template for a ReactJS Project. This template includes suppo
 ## Installation
 
 ```sh
-git clone git@bitbucket.org:bolencki13/react-boilerplate.git && rm -R .git/ && git init && npm i -D
+git clone git@github.com:bolencki13/react-boilerplate.git && cd react-boilerplate && rm -rf .git && git init; npm i -D
 ```
 
 ## Usage example
