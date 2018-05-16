@@ -11,7 +11,7 @@ module.exports = {
     modules: ['src', 'node_modules']
   },
   output: {
-    filename: '[name].[hash].js',
+    filename: 'resources/js/[name].[hash].js',
     path: path.resolve('./dist/')
   },
   module: {
@@ -56,7 +56,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[hash].[ext]',
+              name: '[name].[ext]',
               publicPath: 'resources/images/',
               outputPath: 'resources/images/'
             }
