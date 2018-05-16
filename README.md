@@ -12,6 +12,7 @@ A basic boilerplate template for a ReactJS Project. This template includes suppo
 * Readable folder structure
 * [ESLint](https://eslint.org/)
 * [SASS/SCSS](https://sass-lang.com/)
+* Bootstrap
 * Image loading
 * Font loading
 * [Routing](https://github.com/ReactTraining/react-router)
