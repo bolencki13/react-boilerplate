@@ -1,5 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const path = require('path')
 
 module.exports = {
@@ -11,7 +12,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./dist')
+    path: path.resolve('./dist/')
   },
   module: {
     rules: [
@@ -32,16 +33,33 @@ module.exports = {
         ]
       },
       {
-        test: /\.s(a|c)ss$/,
+        test: /\.s?[ac]ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          publicPath: 'resources/fonts/',
+          outputPath: 'resources/fonts/'
+        }
+      },
+      {
+        test: /\.(gif|jpg|jpeg|tiff|png)$/,
         use: [
           {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              publicPath: 'resources/images/',
+              outputPath: 'resources/images/'
+            }
           }
         ]
       }
@@ -50,8 +68,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/public/index.html'
-
     }),
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({
+      filename: "resources/css/[hash].css",
+      chunkFilename: "resources/css/[id].[hash].css"
+    })
   ]
 }
