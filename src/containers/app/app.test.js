@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import App from './'
 
-describe('containers/home', () => {
+describe('containers/app', () => {
   it('should match snapshot', () => {
     const wrapper = shallow(<App/>)
 

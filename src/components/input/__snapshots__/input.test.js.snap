@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`containers/home should match snapshot 1`] = `
+exports[`components/input should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MockStore>
-    <Connect(HomePage) />
+    <Input
+      text="some text"
+    />
   </MockStore>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,7 +21,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Connect(HomePage) />,
+      "children": <Input
+        text="some text"
+      />,
       "store": Object {
         "dispatch": [Function],
         "getState": [Function],
@@ -33,7 +37,9 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
-      "props": Object {},
+      "props": Object {
+        "text": "some text",
+      },
       "ref": null,
       "rendered": null,
       "type": [Function],
@@ -46,7 +52,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Connect(HomePage) />,
+        "children": <Input
+          text="some text"
+        />,
         "store": Object {
           "dispatch": [Function],
           "getState": [Function],
@@ -60,7 +68,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "text": "some text",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],

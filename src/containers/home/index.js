@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import Input from 'components/input'
 import * as HelloWorldActions from 'redux/actions/helloWorld'
 
+import ImgReact from 'public/resources/images/reactjs.png'
+
 class HomePage extends Component {
   constructor (props) {
     super(props)
@@ -22,10 +24,11 @@ class HomePage extends Component {
 
   render () {
     return (
-      <div>
+      <div className="container p-4">
         <h1>Hello world!</h1>
         <Input text={this.props.value} onChange={(newValue) => this.onInputChange(newValue)}/>
         <p>{this.props.value}</p>
+        <img src={ImgReact} alt="React J S" width="150px"/>
       </div>
     )
   }

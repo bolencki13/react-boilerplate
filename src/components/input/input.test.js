@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import HomePage from './'
+import Input from './'
 
-describe('containers/home', () => {
+describe('components/input', () => {
   it('should match snapshot', () => {
     const wrapper = shallow(
       <MockStore>
-        <HomePage/>
+        <Input text="some text"/>
       </MockStore>
     )
 

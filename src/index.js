@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from 'containers/app'
-import registerServiceWorker from 'utils/registerServiceWorker'
 
-import 'stylesheets/index.scss'
-
-registerServiceWorker()
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import 'stylesheets/style.scss'
 
 ReactDOM.render(
   <App/>,
